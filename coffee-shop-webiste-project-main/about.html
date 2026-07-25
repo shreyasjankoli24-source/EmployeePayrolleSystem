@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About - Brew Haven Coffee</title>
+  
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background: #f8f5f2;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    /* Navigation */
+    header {
+      background: #4e342e;
+      padding: 15px;
+    }
+
+    nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+    /* Containers */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 20px auto;
+      background: white;
+      padding: 25px;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    /* Headings */
+    h1 {
+      color: #4e342e;
+      text-align: center;
+      margin-bottom: 15px;
+    }
+
+    h2 {
+      color: #6d4c41;
+      margin-bottom: 15px;
+    }
+
+    h3 {
+      color: #8d6e63;
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 10px;
+    }
+
+    section {
+      margin: 30px 0;
+    }
+
+    ul {
+      margin-left: 25px;
+    }
+
+    li {
+      margin-bottom: 10px;
+    }
+
+    /* Highlight Sections */
+    #community .container,
+    #delivery .container {
+      background: #efebe9;
+      border-left: 6px solid #6d4c41;
+    }
+
+    /* Gallery */
+    #gallery .gallery-wrapper {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+
+    #gallery figure {
+      width: 320px;
+      background: white;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    #gallery img {
+      width: 100%;
+      height: 250px;
+      object-fit: cover;
+      display: block;
+    }
+
+    #gallery figcaption {
+      padding: 12px;
+      text-align: center;
+      font-weight: bold;
+      color: #4e342e;
+    }
+
+    /* Footer */
+    footer {
+      background: #3e2723;
+      color: white;
+      text-align: center;
+      padding: 25px;
+      margin-top: 40px;
+    }
+
+    footer p,
+    footer a {
+      color: white;
+    }
+
+    footer ul {
+      list-style: none;
+      margin: 10px 0;
+    }
+
+    footer li {
+      display: inline;
+      margin: 0 10px;
+    }
+
+    footer a {
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      color: #ffcc80;
+    }
+
+    /* Responsive */
+    @media(max-width:768px) {
+      .container {
+        width: 95%;
+      }
+
+      #gallery figure {
+        width: 100%;
+      }
+
+      nav a {
+        display: block;
+        margin: 10px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <header>
+    <nav>
+      <a href="home.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="products.html">Products</a> |
+      <a href="blog.html">Blog</a> |
+      <a href="career.html">Career</a> |
+      <a href="cart.html">Cart</a> |
+      <a href="payment.html">Payment</a> |
+      <a href="dashboard.html">Dashboard</a>
+    </nav>
+  </header>
+
+  <div class="container">
+    <h1>Brew Haven Coffee</h1>
+    <p style="text-align:center;">Your daily dose of happiness in a cup!</p>
+  </div>
+
+  <main id="about">
+
+    <div class="container">
+      <h1>About Brew Haven Coffee</h1>
+    </div>
+
+    <section id="story">
+      <div class="container">
+        <h2>Our Story</h2>
+        <p>Founded in 2026 by Paras Gawand, our coffee shop began with a passion for ethically sourced beans and a love for community spaces.</p>
+        <p>We are passionate about serving freshly brewed coffee sourced from the finest beans around the world.</p>
+        <p>We bring ethically sourced beans and eco-friendly practices to every cup.</p>
+      </div>
+    </section>
+
+    <section id="mission-vision">
+      <div class="container">
+        <h2>Our Mission and Vision</h2>
+
+        <p>To craft exceptional coffee experiences by sourcing the finest beans, brewing with passion, and creating a welcoming space where every sip feels like home.</p>
+
+        <p><strong>Mission:</strong> To serve ethically sourced, freshly roasted coffee with warmth and care.</p>
+
+        <p><strong>Vision:</strong> To be Mumbai's favorite neighborhood café, where quality meets comfort.</p>
+      </div>
+    </section>
+
+    <section id="sourcing">
+      <div class="container">
+        <h2>Our Coffee Sourcing</h2>
+        <p>We source beans from Darjeeling, Assam, and Meghalaya, ensuring fair trade and sustainable practices.</p>
+        <p>Our partnerships with farmers guarantee that every cup supports communities and promotes environmental stewardship.</p>
+      </div>
+    </section>
+
+    <section id="team">
+      <div class="container">
+        <h2>Meet the Team</h2>
+        <ul>
+          <li><strong>Owner:</strong> Paras Gawand</li>
+          <li><strong>Head Barista:</strong> Rohit Sharma</li>
+          <li><strong>Staff:</strong> Friendly and skilled team members</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="roasting">
+      <div class="container">
+        <h2>Our Roasting Process</h2>
+        <p>We roast our beans daily in-house, balancing flavor and aroma to deliver the perfect cup every time.</p>
+        <p>Our expert roasters ensure that each batch highlights the unique characteristics of the beans.</p>
+      </div>
+    </section>
+
+    <section id="community">
+      <div class="container">
+        <h2>Community Involvement</h2>
+        <h3>Available for Parties</h3>
+        <p>We bring the coffee experience to your celebrations! From birthdays to corporate events, our team sets up a live coffee bar to keep the energy flowing and guests smiling.</p>
+        <p><strong>Book us for your next event!</strong></p>
+      </div>
+    </section>
+
+    <section id="delivery">
+      <div class="container">
+        <h2>Home Delivery</h2>
+        <p>Enjoy your favorite brews from the comfort of home. Fast, fresh, and delivered right to your doorstep.</p>
+        <p><strong>Order now and let the coffee come to you!</strong></p>
+      </div>
+    </section>
+
+    <section id="gallery">
+      <div class="container">
+        <h2>Photo Gallery</h2>
+
+        <div class="gallery-wrapper">
+
+          <figure>
+            <img src="images/interior.jpg" alt="Coffee Shop Interior">
+            <figcaption>Cozy Store Interior</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/barista.jpg" alt="Coffee Preparation">
+            <figcaption>Barista Preparing Coffee</figcaption>
+          </figure>
+
+          <figure>
+            <img src="images/beans.jpg" alt="Coffee Beans">
+            <figcaption>Fresh Coffee Beans</figcaption>
+          </figure>
+
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Brew Haven Coffee. All Rights Reserved.</p>
+
+    <ul>
+      <li><a href="#">Privacy Policy</a></li>
+      <li><a href="#">Terms of Service</a></li>
+    </ul>
+
+    <p>Follow us: Instagram | Facebook | Twitter</p>
+  </footer>
+
+</body>
+
+</html>

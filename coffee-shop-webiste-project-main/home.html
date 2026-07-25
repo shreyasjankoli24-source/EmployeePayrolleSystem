@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brew Haven Coffee</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background-color: #f8f5f2;
+            color: #333;
+            line-height: 1.6; 
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+        }
+
+        header {
+            background: #4e342e;
+            padding: 15px 0;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+        #hero-banner {
+            text-align: center;
+        }
+          
+        #hero-banner h1 {
+            font-size: 3rem;
+            color: #4e342e;
+            margin-bottom: 10px;
+        }
+
+        #hero-banner p {
+            font-size: 1.2rem;
+            margin-bottom: 20px;
+        }
+
+        .btn a {
+            display: inline-block;
+            text-decoration: none;
+            background: #6d4c41;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 30px;
+        }
+
+        .btn a:hover {
+            background: #3e2723;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            /* allow natural height so images are fully visible */
+            max-height: 450px;
+            /* limit very tall images while keeping full visibility */
+            object-fit: contain;
+            /* show whole image without cropping */
+            display: block;
+            margin: 20px auto;
+            border-radius: 12px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        #hero-banner img {
+            width: 100%;
+            height: auto;
+            max-height: 600px;
+            object-fit: contain;
+            border-radius: 15px;
+        }
+
+        #featured-products img {
+            width: 100%;
+            height: auto;
+            max-height: 400px;
+            object-fit: contain;
+        }
+
+        #why-choose-us img {
+            width: 100%;
+            height: auto;
+            max-height: 450px;
+            object-fit: contain;
+        }
+
+        section {
+            margin: 40px 0;
+        }
+
+        h1,
+        h2 {
+            color: #4e342e;
+            margin-bottom: 10px;
+        }
+
+        hr {
+            border: none;
+            height: 3px;
+            background: #d7ccc8;
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        blockquote {
+            background: #efebe9;
+            padding: 15px;
+            margin: 15px 0;
+            border-left: 5px solid #6d4c41;
+            border-radius: 5px;
+            font-style: italic;
+        }
+
+        form {
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+        }
+
+        input[type="email"] {
+            flex: 1;
+            min-width: 250px;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        button {
+            padding: 12px 20px;
+            border: none;
+            background: #6d4c41;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #3e2723;
+        }
+
+        iframe {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        footer {
+            background: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: #ffcc80;
+            text-decoration: none;
+        }
+
+        @media(max-width:768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            #hero-banner h1 {
+                font-size: 2rem;
+            }
+
+            form {
+                flex-direction: column;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="products.html">Products</a>
+            <a href="blog.html">Blog</a>
+            <a href="career.html">Career</a>
+            <a href="cart.html">Cart</a>
+            <a href="payment.html">Payment</a>
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <main>
+
+        <section id="hero-banner">
+            <div class="container">
+                <h1>Brew Haven Coffee</h1>
+                <hr>
+                <p>Your daily dose of happiness in a cup!</p>
+
+                <div class="btn">
+                    <a href="products.html">Explore Products</a>
+                </div>
+
+                <img src="C:\Users\Paras Gawand\OneDrive\sprk html\FINAL 1\images\image.png" alt="Coffee Shop Banner">
+            </div>
+        </section>
+
+        <section id="featured-products">
+
+            <div class="container">
+                <h2>Featured Products</h2>
+                <hr>
+
+                <h3>Caramel Cold Brew - 50% Off</h3>
+                <ul>
+                    <li>Rich coffee blended with sweet caramel.</li>
+                    <li>Served chilled over ice.</li>
+                    <li>Perfect for summer refreshment.</li>
+                </ul>
+
+                <img src="C:\Users\Paras Gawand\OneDrive\sprk html\FINAL 1\images\guy-basabose-FzdEbrA3Qj0-unsplash.jpg"
+                    alt="Caramel Cold Brew">
+            </div>
+
+            <div class="container">
+                <h3>Americano - 50% Off</h3>
+                <ul>
+                    <li>Bold espresso with smooth flavor.</li>
+                    <li>Classic American-style coffee.</li>
+                    <li>Perfect balance of strength and taste.</li>
+                </ul>
+
+                <img src="C:\Users\Paras Gawand\OneDrive\sprk html\FINAL 1\images\pablo-merchan-montes-_Tw4vCs9C-8-unsplash.jpg"
+                    alt="Americano Coffee">
+            </div>
+
+        </section>
+
+        <section id="why-choose-us">
+            <div class="container">
+
+                <h1>Why Choose Brew Haven Coffee</h1>
+                <hr>
+
+                <p>Quality beans, experienced baristas, and a comfortable ambience.</p>
+
+                <h2>Our Unique Selling Points</h2>
+
+                <ul>
+                    <li><strong>Quality Beans:</strong> Sourced from the finest coffee farms around the world.</li>
+
+                    <li><strong>Experienced Baristas:</strong> Every cup is handcrafted with expertise and passion.</li>
+
+                    <li><strong>Comfortable Ambience:</strong> The perfect place to relax, work, or meet friends.</li>
+                </ul>
+
+                <img src="C:\Users\Paras Gawand\OneDrive\sprk html\FINAL 1\images\82b6bec3-94f7-4b55-a463-84313fc35a30.jpg"
+                    alt="Coffee Cafe Interior">
+
+            </div>
+        </section>
+
+        <section id="testimonials">
+            <div class="container">
+
+                <h1>What Our Customers Say</h1>
+                <hr>
+
+                <p>See what coffee lovers say about Brew Haven Coffee.</p>
+
+                <blockquote>
+                    "Best latte in town!" — Sarah K.
+                </blockquote>
+
+                <blockquote>
+                    "Love the cozy vibe." — James L.
+                </blockquote>
+
+                <blockquote>
+                    "Friendly staff and great coffee." — Priya M.
+                </blockquote>
+
+            </div>
+        </section>
+
+        <section id="blog-preview">
+            <div class="container">
+
+                <h1>From Our Blog</h1>
+                <hr>
+
+                <p>Get the latest coffee news, brewing tips, and cafe lifestyle hacks.</p>
+
+                <ul>
+                    <li><a href="blog.html#espresso">5 Tips for Brewing Espresso</a></li>
+                    <li><a href="blog.html#ethiopian">Why Ethiopian Beans Are Special</a></li>
+                    <li><a href="blog.html#lifestyle">Cafe Lifestyle Hacks</a></li>
+                </ul>
+
+            </div>
+        </section>
+
+        <section id="location">
+            <div class="container">
+
+                <h1>Find Us</h1>
+                <hr>
+
+                <p>Visit our cozy coffee shop today.</p>
+
+                <h2>Address</h2>
+
+                <p>123 Little World Mall, Kharghar</p>
+                <p>Open: Mon-Sun | 8:00 AM - 10:00 PM</p>
+
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d44267.352269291965!2d73.05720143954052!3d19.031667500554743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c26a50baff27%3A0x1882f03160f691d!2sLittle%20World%20Mall!5e0!3m2!1sen!2sin!4v1773150643632!5m2!1sen!2sin"
+                    width="600" height="350" style="border:0;" allowfullscreen="" loading="lazy">
+                </iframe>
+
+            </div>
+        </section>
+
+        <section id="newsletter">
+            <div class="container">
+
+                <h1>Stay Updated</h1>
+                <hr>
+
+                <p>Subscribe for promotions, coffee tips, and special offers.</p>
+
+                <form>
+                    <input type="email" placeholder="Enter your email">
+                    <button type="submit">Subscribe</button>
+                </form>
+
+            </div>
+        </section>
+
+    </main>
+
+    <footer>
+
+        <p>&copy; 2026 Brew Haven Coffee. All Rights Reserved.</p>
+
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+
+        <p>Follow us: Instagram | Facebook | Twitter</p>
+
+    </footer>
+
+</body>
+
+</html>

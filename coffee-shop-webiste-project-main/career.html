@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Career - Brew Haven Coffee</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f8f5f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background: #4e342e;
+            padding: 15px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #4e342e;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #6d4c41;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* Job Cards */
+        .job-list {
+            list-style: none;
+        }
+
+        .job-list li {
+            background: #fff8f3;
+            padding: 15px;
+            margin: 10px 0;
+            border-left: 5px solid #6d4c41;
+            border-radius: 8px;
+            font-weight: bold;
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        input {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color: #6d4c41;
+        }
+
+        button {
+            background: #6d4c41;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        button:hover {
+            background: #3e2723;
+        }
+
+        /* Contact */
+        .contact-list {
+            list-style: none;
+        }
+
+        .contact-list li {
+            margin: 10px 0;
+        }
+
+        /* Footer */
+        footer {
+            background: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer ul {
+            list-style: none;
+        }
+
+        footer ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: #ffcc80;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile */
+        @media(max-width:768px) {
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="products.html">Products</a> |
+            <a href="blog.html">Blog</a> |
+            <a href="career.html">Career</a> |
+            <a href="cart.html">Cart</a> |
+            <a href="payment.html">Payment</a> |
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to Brew Haven Coffee</h1>
+        <p style="text-align:center;">Your daily dose of happiness in a cup!</p>
+    </div>
+
+    <div class="container">
+        <h1>Join Our Team & Explore Our Services</h1>
+
+        <h2>Career Opportunities</h2>
+        <p>We're hiring passionate coffee lovers! Current openings include:</p>
+
+        <ul class="job-list">
+            <li>☕ Barista</li>
+            <li>🏪 Store Manager</li>
+            <li>🚚 Delivery Partner</li>
+        </ul>
+    </div>
+
+    <div class="container">
+        <h2>Apply Now</h2>
+
+        <form>
+            <input type="text" placeholder="Enter Your Name" required>
+
+            <input type="email" placeholder="Enter Your Email" required>
+
+            <input type="text" placeholder="Position Interested In" required>
+
+            <button type="submit">Submit Application</button>
+        </form>
+    </div>
+
+    <div class="container">
+        <h2>Contact Us</h2>
+
+        <ul class="contact-list">
+            <li><strong>Phone:</strong> 7208737709</li>
+            <li><strong>Email:</strong> info@brewhaven.com</li>
+            <li><strong>Address:</strong> 123 Coffee Street, Navi Mumbai</li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Brew Haven Coffee. All Rights Reserved.</p>
+
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+
+        <p>Follow us: Instagram | Facebook | Twitter</p>
+    </footer>
+
+</body>
+
+</html>
+

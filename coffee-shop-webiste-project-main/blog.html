@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Brew Haven Coffee</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f8f5f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background: #4e342e;
+            padding: 15px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+        /* Hero Section */
+        .hero {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .hero h1 {
+            color: #4e342e;
+            margin-bottom: 10px;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        /* Blog Cards */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+
+        article {
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        article img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .content {
+            padding: 20px;
+        }
+
+        article h3 {
+            color: #4e342e;
+            margin-bottom: 10px;
+        }
+
+        article a {
+            display: inline-block;
+            margin-top: 10px;
+            text-decoration: none;
+            background: #6d4c41;
+            color: white;
+            padding: 10px 18px;
+            border-radius: 6px;
+        }
+
+        article a:hover {
+            background: #3e2723;
+        }
+
+        /* Featured Blog */
+        .featured {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .featured img {
+            width: 100%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* Popular Posts */
+        .popular {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        .popular ul {
+            margin-left: 20px;
+        }
+
+        .popular li {
+            margin: 10px 0;
+        }
+
+        /* Author */
+        .author {
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            margin: 30px 0;
+            border-left: 5px solid #6d4c41;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        }
+
+        /* Footer */
+        footer {
+            background: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: #ffcc80;
+            text-decoration: none;
+        }
+
+        /* Mobile */
+        @media(max-width:768px) {
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .featured img {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="products.html">Products</a> |
+            <a href="blog.html">Blog</a> |
+            <a href="career.html">Career</a> |
+            <a href="cart.html">Cart</a> |
+            <a href="payment.html">Payment</a> |
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h1>Brew Haven Coffee Blog</h1>
+        <p>Your daily dose of coffee knowledge and café culture.</p>
+    </section>
+
+    <main class="container">
+
+        <h2>Latest Blog Posts</h2>
+
+        <div class="blog-grid">
+
+            <article>
+                <img src="images/espresso.jpg" alt="Espresso Brewing">
+                <div class="content">
+                    <h3>5 Tips for Brewing Espresso</h3>
+                    <p>Learn how to brew the perfect espresso at home with these simple techniques.</p>
+                    <a href="https://coffeegeek.com/guides/howtos/espresso-how-to/">Read More</a>
+                </div>
+            </article>
+
+            <article>
+                <img src="images/ethiopian-beans.jpg" alt="Ethiopian Coffee Beans">
+                <div class="content">
+                    <h3>Why Ethiopian Beans Are Special</h3>
+                    <p>Discover the unique flavors and history behind Ethiopia’s world-famous beans.</p>
+                    <a href="https://simpleroastcoffee.com/">Read More</a>
+                </div>
+            </article>
+
+            <article>
+                <img src="images/cafe-lifestyle.jpg" alt="Cafe Lifestyle">
+                <div class="content">
+                    <h3>Cafe Lifestyle Hacks</h3>
+                    <p>Tips to make your coffee shop visits more enjoyable and productive.</p>
+                    <a href="https://en.wikipedia.org/wiki/Coffee_culture">Read More</a>
+                </div>
+            </article>
+
+        </div>
+
+        <section class="featured">
+            <h2>Featured Blog</h2>
+            <img src="images/pour-over.jpg" alt="Pour Over Coffee">
+
+            <h3>The Art of Pour Over Coffee</h3>
+            <p>
+                A deep dive into the pour-over method, balancing precision,
+                technique, and flavor extraction.
+            </p>
+        </section>
+
+        <section class="popular">
+            <h2>Popular Posts</h2>
+            <ul>
+                <li>Cold Brew vs Iced Coffee</li>
+                <li>Top 5 Coffee Recipes</li>
+                <li>How to Choose Coffee Beans</li>
+            </ul>
+        </section>
+
+        <section class="author">
+            <h2>About the Author</h2>
+            <p><strong>Name:</strong> Paras Gawand</p>
+            <p><strong>Bio:</strong> Coffee enthusiast and café lover sharing brewing tips, bean knowledge, and coffee culture insights.</p>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Brew Haven Coffee. All Rights Reserved.</p>
+
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+
+        <p>Follow us: Instagram | Facebook | Twitter</p>
+    </footer>
+
+</body>
+
+</html>

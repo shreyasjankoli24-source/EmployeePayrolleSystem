@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Dashboard - Brew Haven Coffee</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f8f5f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background: #4e342e;
+            padding: 15px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        /* Headings */
+        h1 {
+            text-align: center;
+            color: #4e342e;
+            margin-bottom: 15px;
+        }
+
+        h2 {
+            color: #6d4c41;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin-bottom: 10px;
+        }
+
+        /* Dashboard Cards */
+        .dashboard-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .card {
+            background: #fff8f3;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #6d4c41;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        li {
+            margin-bottom: 8px;
+        }
+
+        /* Rewards */
+        .reward-points {
+            font-size: 30px;
+            font-weight: bold;
+            color: #4e342e;
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: #ffcc80;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive */
+        @media(max-width:768px) {
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="products.html">Products</a> |
+            <a href="blog.html">Blog</a> |
+            <a href="career.html">Career</a> |
+            <a href="cart.html">Cart</a> |
+            <a href="payment.html">Payment</a> |
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to Brew Haven Coffee</h1>
+        <p style="text-align:center;">Your daily dose of happiness in a cup!</p>
+    </div>
+
+    <div class="container">
+        <h1>User Dashboard</h1>
+
+        <div class="dashboard-grid">
+
+            <div class="card">
+                <h2>Profile</h2>
+                <p><strong>Name:</strong> John Doe</p>
+                <p><strong>Email:</strong> john@example.com</p>
+            </div>
+
+            <div class="card">
+                <h2>Order History</h2>
+                <ul>
+                    <li>Latte - 2nd March 2026</li>
+                    <li>Cold Brew - 5th March 2026</li>
+                    <li>Cappuccino - 8th March 2026</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h2>Rewards</h2>
+                <p>Available Reward Points</p>
+                <div class="reward-points">120</div>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Brew Haven Coffee. All Rights Reserved.</p>
+
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+
+        <p>Follow us: Instagram | Facebook | Twitter</p>
+    </footer>
+
+</body>
+
+</html>
+

@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment - Brew Haven Coffee</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        body {
+            background: #f8f5f2;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        header {
+            background: #4e342e;
+            padding: 15px;
+        }
+
+        nav {
+            text-align: center;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            color: #ffcc80;
+        }
+
+        /* Container */
+        .container {
+            width: 90%;
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #4e342e;
+            text-align: center;
+            margin-bottom: 15px;
+        }
+
+        p {
+            text-align: center;
+            margin-bottom: 10px;
+        }
+
+        /* Form */
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        label {
+            font-weight: bold;
+            color: #4e342e;
+        }
+
+        input,
+        select,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            margin-top: 5px;
+        }
+
+        input:focus,
+        select:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #6d4c41;
+        }
+
+        button {
+            background: #6d4c41;
+            color: white;
+            border: none;
+            padding: 14px;
+            border-radius: 8px;
+            font-size: 16px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background: #3e2723;
+        }
+
+        /* Footer */
+        footer {
+            background: #3e2723;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+        footer ul {
+            list-style: none;
+            margin: 10px 0;
+        }
+
+        footer li {
+            display: inline;
+            margin: 0 10px;
+        }
+
+        footer a {
+            color: #ffcc80;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Mobile */
+        @media(max-width:768px) {
+
+            nav a {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .container {
+                width: 95%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <nav>
+            <a href="home.html">Home</a> |
+            <a href="about.html">About</a> |
+            <a href="products.html">Products</a> |
+            <a href="blog.html">Blog</a> |
+            <a href="career.html">Career</a> |
+            <a href="cart.html">Cart</a> |
+            <a href="payment.html">Payment</a> |
+            <a href="dashboard.html">Dashboard</a>
+        </nav>
+    </header>
+
+    <div class="container">
+        <h1>Welcome to Brew Haven Coffee</h1>
+        <p>Your daily dose of happiness in a cup!</p>
+    </div>
+
+    <div class="container">
+        <h1>Checkout</h1>
+
+        <form>
+
+            <div>
+                <label for="name">Full Name</label>
+                <input type="text" id="name" placeholder="Enter your full name" required>
+            </div>
+
+            <div>
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="Enter your email" required>
+            </div>
+
+            <div>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" placeholder="Enter your phone number" required>
+            </div>
+
+            <div>
+                <label for="address">Delivery Address</label>
+                <textarea id="address" rows="4"
+                    placeholder="Enter your complete delivery address"></textarea>
+            </div>
+
+            <div>
+                <label for="payment">Payment Method</label>
+                <select id="payment">
+                    <option>Credit Card</option>
+                    <option>Debit Card</option>
+                    <option>UPI</option>
+                    <option>Wallet</option>
+                    <option>Cash on Delivery</option>
+                </select>
+            </div>
+
+            <button type="submit">Complete Payment</button>
+
+        </form>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Brew Haven Coffee. All Rights Reserved.</p>
+
+        <ul>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms of Service</a></li>
+        </ul>
+
+        <p>Follow us: Instagram | Facebook | Twitter</p>
+    </footer>
+
+</body>
+
+</html>
+
